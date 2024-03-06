@@ -45,6 +45,7 @@ dependencies:
   cloud_firestore:
   flutter_svg:
   flutter_screenutil:
+  intl:
 
 dev_dependencies:
   flutter_test:
@@ -75,8 +76,11 @@ flutter:
     - assets/images/saveEveryDay/
     - assets/images/planNextTrip/
     - assets/images/moreWaysUber/
+    - assets/images/services/
+    - assets/images/vehicle/
 
   # An image asset can refer to one or more resolution-specific "variants", see
+
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see

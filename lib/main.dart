@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride/constant/utils/colors.dart';
-import 'package:ride/rider/view/ride_homescreen.dart';
+import 'package:ride/rider/view/account/acount_screen_rider.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             appBarTheme: AppBarTheme(color: white, elevation: 0.0),
           ),
-          home: const RiderHomeScreen(),
+          home: const RiderAccountScreen(),
         );
       }),
     );

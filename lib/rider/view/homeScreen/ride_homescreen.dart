@@ -48,12 +48,12 @@ class _RiderHomeScreenState extends State<RiderHomeScreen> {
   ];
   List saveEveryDay = [
     [
-      "assets/images/saveEveryday/uberMotorTrips.png",
+      "assets/images/saveEveryDay/uberMotoTrips.png",
       "Ride Motor trips",
       "Affordable motorcycle pick-ups"
     ],
     [
-      "assets/images/saveEveryday/tryAGrouptrip.png",
+      "assets/images/saveEveryDay/tryAGroupTrip.png",
       "Try a group trip",
       "Seamless trips, together"
     ],
@@ -213,7 +213,7 @@ class _RiderHomeScreenState extends State<RiderHomeScreen> {
           SizedBox(height: 4.h),
           ExploreFeatures(
             list: saveEveryDay,
-            title: 'Save everryday',
+            title: 'Save Everyday',
           ),
           SizedBox(height: 2.h),
         ],
