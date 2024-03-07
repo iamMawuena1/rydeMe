@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:ride/constant/utils/colors.dart';
-import 'package:ride/rider/view/account/acount_screen_rider.dart';
+import 'package:ride/rider/controller/RiderBottomnavbarProvider/rider_bottomnavbar_provider.dart';
+import 'package:ride/rider/view/bottomnavbar/bottomnavbar_rider.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -15,12 +17,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: ((context, orientation, deviceType) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            appBarTheme: AppBarTheme(color: white, elevation: 0.0),
+        return MultiProvider(
+          providers: [
+            ChangeNotifierProvider<RiderBottoNavBarProvider>(
+              create: (_) => RiderBottoNavBarProvider(),
+            ),
+          ],
+          child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              appBarTheme: AppBarTheme(color: white, elevation: 0.0),
+            ),
+            home: const RiderBottomNavBar(),
           ),
-          home: const RiderAccountScreen(),
         );
       }),
     );
