@@ -62,6 +62,7 @@ class _OtpScreenState extends State<OtpScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              //back button
               ElevatedButtonCommon(
                 onPressed: () {},
                 backgroundColor: white,
@@ -72,6 +73,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   Icons.arrow_back_ios_new,
                 ),
               ),
+              //continue button
               ElevatedButtonCommon(
                 onPressed: () {},
                 backgroundColor: white,

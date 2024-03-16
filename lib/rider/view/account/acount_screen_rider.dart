@@ -60,7 +60,7 @@ class _RiderAccountScreenState extends State<RiderAccountScreen> {
                         color: black,
                         image: const DecorationImage(
                           image: AssetImage(
-                            "asssets/images/uberLogo/uber.png",
+                            "asssets/images/uberLogo/rydeblack.png",
                           ),
                         ),
                       ),

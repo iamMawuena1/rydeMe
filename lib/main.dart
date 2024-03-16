@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ride/common/controller/authprovider.dart';
-import 'package:ride/common/view/authscreen/otp.dart';
+import 'package:ride/common/view/regisration%20screen/registration_screen.dart';
 import 'package:ride/constant/utils/colors.dart';
 import 'package:ride/rider/controller/RiderBottomnavbarProvider/rider_bottomnavbar_provider.dart';
 import 'package:sizer/sizer.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               appBarTheme: AppBarTheme(color: white, elevation: 0.0),
             ),
-            home: const OtpScreen(),
+            home: const RegistrationScreen(),
           ),
         );
       }),
