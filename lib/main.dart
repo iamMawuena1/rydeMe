@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:ride/common/controller/authprovider.dart';
+import 'package:ride/common/view/authscreen/otp.dart';
 import 'package:ride/constant/utils/colors.dart';
 import 'package:ride/rider/controller/RiderBottomnavbarProvider/rider_bottomnavbar_provider.dart';
-import 'package:ride/rider/view/bottomnavbar/bottomnavbar_rider.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -22,13 +23,16 @@ class MyApp extends StatelessWidget {
             ChangeNotifierProvider<RiderBottoNavBarProvider>(
               create: (_) => RiderBottoNavBarProvider(),
             ),
+            ChangeNotifierProvider<MobileAuthProvider>(
+              create: (_) => MobileAuthProvider(),
+            ),
           ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               appBarTheme: AppBarTheme(color: white, elevation: 0.0),
             ),
-            home: const RiderBottomNavBar(),
+            home: const OtpScreen(),
           ),
         );
       }),

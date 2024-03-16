@@ -48,6 +48,11 @@ dependencies:
   intl:
   persistent_bottom_nav_bar_v2: 
   provider:
+  country_picker:
+  intl_phone_field:
+  pin_code_fields:
+
+
 
 
 dev_dependencies:
@@ -81,6 +86,11 @@ flutter:
     - assets/images/moreWaysUber/
     - assets/images/services/
     - assets/images/vehicle/
+    - assets/images/authIcons/
+    - assets/images/uberLogo/
+    - assets/images/icons/
+    - assets/sounds/
+    - assets/json/customizedMap.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
 
